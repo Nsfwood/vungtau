@@ -11,16 +11,20 @@
 		08A93A822534879C0008333C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A93A812534879C0008333C /* ViewController.swift */; };
 		08A93A842534879F0008333C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A93A832534879F0008333C /* Assets.xcassets */; };
 		08A93A872534879F0008333C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A93A852534879F0008333C /* Main.storyboard */; };
+		08A93A952537CBFD0008333C /* CheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A93A942537CBFC0008333C /* CheckCell.swift */; };
+		08E1DA762545ED4300F5D271 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E1DA752545ED4300F5D271 /* loginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		08A93A7C2534879B0008333C /* vungtau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vungtau.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A93A7C2534879B0008333C /* Start.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Start.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08A93A7F2534879B0008333C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08A93A812534879C0008333C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		08A93A832534879F0008333C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08A93A862534879F0008333C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08A93A882534879F0008333C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08A93A892534879F0008333C /* vungtau.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = vungtau.entitlements; sourceTree = "<group>"; };
+		08A93A942537CBFC0008333C /* CheckCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckCell.swift; sourceTree = "<group>"; };
+		08E1DA752545ED4300F5D271 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +49,7 @@
 		08A93A7D2534879B0008333C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				08A93A7C2534879B0008333C /* vungtau.app */,
+				08A93A7C2534879B0008333C /* Start.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +59,8 @@
 			children = (
 				08A93A7F2534879B0008333C /* AppDelegate.swift */,
 				08A93A812534879C0008333C /* ViewController.swift */,
+				08E1DA752545ED4300F5D271 /* loginViewController.swift */,
+				08A93A942537CBFC0008333C /* CheckCell.swift */,
 				08A93A832534879F0008333C /* Assets.xcassets */,
 				08A93A852534879F0008333C /* Main.storyboard */,
 				08A93A882534879F0008333C /* Info.plist */,
@@ -80,7 +86,7 @@
 			);
 			name = vungtau;
 			productName = vungtau;
-			productReference = 08A93A7C2534879B0008333C /* vungtau.app */;
+			productReference = 08A93A7C2534879B0008333C /* Start.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E1DA762545ED4300F5D271 /* loginViewController.swift in Sources */,
+				08A93A952537CBFD0008333C /* CheckCell.swift in Sources */,
 				08A93A822534879C0008333C /* ViewController.swift in Sources */,
 				08A93A802534879C0008333C /* AppDelegate.swift in Sources */,
 			);
@@ -272,15 +280,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = vungtau/vungtau.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 202009091033;
+				DEVELOPMENT_TEAM = 3865YC2YEY;
 				INFOPLIST_FILE = vungtau/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexanderrohrig.vungtau;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Start;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -291,15 +302,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = vungtau/vungtau.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 202009091033;
+				DEVELOPMENT_TEAM = 3865YC2YEY;
 				INFOPLIST_FILE = vungtau/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexanderrohrig.vungtau;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Start;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
